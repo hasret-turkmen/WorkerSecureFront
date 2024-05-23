@@ -1,0 +1,44 @@
+.developers-container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 40px; /* Başlık ile resimler arasındaki boşluğu artırıyoruz */
+}
+
+.developer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; /* Resimleri sayfa ortasında hizalamak için biraz boşluk ekliyoruz */
+}
+
+.developer-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    margin: 10px; /* Resimler arasına boşluk ekliyoruz */
+}
+
+.developer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.developer-image {
+    width: 100%;
+    height: auto;
+}
+
+.developer-name {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #0056b3;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif; /* Elegant bir font */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px; /* Kelimeler arasındaki boşluğu artırma */
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s; /* Hover animasyonu */
+}
+
+.nav-link:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ffdd57;
+}
