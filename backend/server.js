@@ -150,8 +150,8 @@ const PORT = 5000;
 const SECRET_KEY = 'your_secret_key';
 
 // Twilio configuration
-const accountSid = process.env.TWILIO_ACC_SID; // Twilio Account SID
-const authToken = process.env.TWILIO_ACC_TOKEN; // Twilio Auth Token
+const accountSid = ""; // Twilio Account SID
+const authToken = ""; // Twilio Auth Token
 const client = new twilio(accountSid, authToken);
 
 app.use(bodyParser.json());
