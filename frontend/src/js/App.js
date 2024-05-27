@@ -3,9 +3,13 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import '../css/App.css';
 import About from './About';
 import Developers from './Developers';
-import HelmetChecker from './HelmetChecker';
 import Home from './Home';
+import Login from './Login';
 import Navbar from './Navbar';
+import Notifications from './Notifications';
+import SignUp from './SignUp';
+import UserManagement from './UserManagement';
+import Video from './Video';
 
 const App = () => {
     return (
@@ -16,7 +20,11 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/developers" element={<Developers />} />
-                    <Route path="/helmet-checker" element={<HelmetChecker />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/user/signup" element={<SignUp />} />
+                    <Route path="/video" element={<Video />} />
+                    <Route path="/notifications" element={<Notifications />} />
+                    <Route path="/user-management" element={<UserManagement />} />
                 </Routes>
             </div>
         </Router>

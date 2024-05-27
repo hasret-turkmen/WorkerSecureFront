@@ -1,0 +1,48 @@
+.notifications-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.custom-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    background-color: darkblue;
+}
+
+.add-notification, .notifications-list {
+    margin-top: 20px;
+}
+
+.add-notification input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notification {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification p {
+    margin: 5px 0;
+}
