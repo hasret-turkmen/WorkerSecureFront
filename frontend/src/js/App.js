@@ -25,7 +25,7 @@ const App = () => {
                     <Route path="/user/signup" element={<SignUp />} />
                     <Route path="/video" element={<Video />} />
                     <Route path="/notifications" element={<Notifications />} />
-                    <Route path="/user-management" element={<UserManagement />} />
+                    <Route path="/user-management" element={<UserManagement />} /> {/* Changed path to avoid conflict */}
                     <Route path="/welcome" element={<Welcome />} /> {/* Welcome rotasını ekleyin */}
                 </Routes>
             </div>

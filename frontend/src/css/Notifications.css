@@ -3,11 +3,17 @@
     margin: 20px;
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Butonlar arasındaki boşluğu ayarlamak için gap kullanın */
+    margin-top: 20px; /* Buton grubu ve üstteki içerik arasındaki boşluk */
+}
+
 .custom-button {
     background-color: blue;
     color: white;
     padding: 10px 20px;
-    margin: 10px;
     border: none;
     cursor: pointer;
     font-size: 16px;

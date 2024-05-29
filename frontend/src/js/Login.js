@@ -16,6 +16,7 @@ const Login = () => {
             setToken(token);
             setName(response.data.name);
             localStorage.setItem('token', token); // Save token to local storage
+            localStorage.setItem('email', email); // Email bilgisini localStorage'a kaydedin
             console.log("Login successful, token stored:", token);
             console.log("Token in localStorage after login:", localStorage.getItem('token'));
         } catch (error) {
