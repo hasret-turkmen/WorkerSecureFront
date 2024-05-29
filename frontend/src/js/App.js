@@ -10,6 +10,7 @@ import Notifications from './Notifications';
 import SignUp from './SignUp';
 import UserManagement from './UserManagement';
 import Video from './Video';
+import Welcome from './Welcome'; // Welcome bileşenini ekleyin
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                     <Route path="/video" element={<Video />} />
                     <Route path="/notifications" element={<Notifications />} />
                     <Route path="/user-management" element={<UserManagement />} />
+                    <Route path="/welcome" element={<Welcome />} /> {/* Welcome rotasını ekleyin */}
                 </Routes>
             </div>
         </Router>

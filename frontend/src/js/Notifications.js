@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // useNavigate hook'unu ekleyin
 import '../css/Notifications.css'; // Import the CSS file
 
 const Notifications = () => {
@@ -10,6 +11,7 @@ const Notifications = () => {
     const [info, setInfo] = useState('');
     const [screenshotURI, setScreenshotURI] = useState('');
     const [date, setDate] = useState('');
+    const navigate = useNavigate(); // useNavigate hook'unu kullanın
 
     const fetchNotifications = async () => {
         try {
@@ -89,6 +91,12 @@ const Notifications = () => {
                         {showNotifications ? 'Cancel' : 'My Notifications'}
                     </button>
                 )}
+                <button 
+                    className="custom-button" 
+                    onClick={() => navigate('/welcome')} // Back to Welcome butonuna tıklanınca yönlendirin
+                >
+                    Back to Welcome
+                </button>
             </div>
             {showAddNotification && (
                 <form className="add-notification" onSubmit={addNotification}>

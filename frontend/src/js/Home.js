@@ -21,7 +21,7 @@ const Home = () => {
                     </section>
                     <section className="login-section">
                         <h2>Login</h2>
-                        <Link to="/user" className="login-button">Go to Login</Link>
+                        <Link to="/login" className="login-button">Go to Login</Link>
                     </section>
                 </div>
             </main>
